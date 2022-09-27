@@ -40,16 +40,19 @@ let men = document.createElement("h2");
       obtener2 = ingreso2.value;
        // alert(""+ obtener); //El codigo funciona bien 
 
+       
+
         switch (obtener2){   
 
-           case "scott":               
-           
+           case "scott":            
+                 
                productosScott.forEach((item)=> {
                //const llenar = new Bicicleta (item.marca,item.modelo,item.precio,item.especificacion,item.foto);
                const { marca,modelo,precio,especificacion,foto} = item;
                new Bicicleta (item)
                productos.push(item);  });//Operadores avanzados
-               impri();                    
+               impri(); 
+                                 
 
            break;
 
@@ -60,8 +63,10 @@ let men = document.createElement("h2");
                const { marca,modelo,precio,especificacion,foto} = item;
                new Bicicleta (item)
                productos.push(item);  });
-               impri();  
+               impri(); 
+               
                break;
+               
 
        
            case "pinarello":
@@ -71,6 +76,7 @@ let men = document.createElement("h2");
                    new Bicicleta (item)
                    productos.push(item);  });
                    impri();  
+                   
                break;
 
        
@@ -81,6 +87,7 @@ let men = document.createElement("h2");
                    new Bicicleta (item)
                    productos.push(item);  });
                    impri();  
+                   
                break;
 
        
@@ -91,9 +98,12 @@ let men = document.createElement("h2");
                    new Bicicleta (item)
                    productos.push(item);  });
                    impri();   
+                  
                break;
                       
                };
+
+               productos.splice(0,productos.length);
 
    };     
 
